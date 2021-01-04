@@ -1,0 +1,17 @@
+{
+  "name": "fivex-booster",
+  "version": "1.0.0",
+  "description": "FiveX Booster",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^11.1.0"
+  },
+  "dependencies": {
+    "nouislider": "^14.6.3",
+    "sweetalert2": "^10.12.5",
+    "yarn": "^1.22.10"
+  }
+}

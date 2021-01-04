@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>FiveX Booster | https://fivexproject.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="waiting" id="waiting">
+      <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>T</div>
+        <div>I</div>
+        <div>A</div>
+        <div>W</div>
+      </div>
+    </div>
+    <div class="waiting" id="waiting2" style="display: none;">
+      <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>H</div>
+        <div>T</div>
+        <div>U</div>
+        <div>A</div>
+      </div>
+    </div>
+    <div class="bar">
+      <span class="title">FiveX Booster</span>
+      <div class="close" id="close">X</div>
+    </div>
+    <center>
+      <img src="assets/logo.png" height="80px" style="margin-top: 6%; margin-bottom: 3%;">
+    </center>
+    <div class="container window">
+      <div class="row">
+        <div class="col-sm panel-col" style="margin-top: 10px;">
+          Hide Resources
+        </div>
+        <div class="col-sm panel-col" style="margin-top: 10px;">
+          <button type="button" class="btn btn-success btn-sm" id="enable-hide-resources">Active</button>
+          <button type="button" class="btn btn-danger btn-sm" disabled id="disable-hide-resources">Deactive</button>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Fake Players
+        </div>
+        <div class="col-sm panel-col">
+          <button type="button" class="btn btn-success btn-sm" id="enable-fake-players">Active</button>
+          <button type="button" class="btn btn-danger btn-sm" disabled id="disable-fake-players">Deactive</button>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Client ID
+        </div>
+        <div class="col-sm panel-col">
+          <span class="client-id" id="client-id"> NaN </span>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          License Expiry Time:
+        </div>
+        <div class="col-sm panel-col">
+          <span id="expiry">Loading...</span>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Boost Options
+        </div>
+        <div class="col-sm panel-col">
+          <button type="button" class="btn btn-light btn-sm" disabled id="fixed-number">Fixed Number</button>
+          <button type="button" class="btn btn-light btn-sm" disabled id="random-number">Random Number</button>
+        </div>
+      </div>
+      <div class="row" id="selector" style = "display: none;">
+        <hr />
+        <div class="col-sm panel-col" >
+          Random Range Selector
+        </div>
+        <div class="col-sm panel-col" style="margin-bottom: 3em;">
+          <div id="range"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Active Players
+        </div>
+        <div class="col-sm panel-col">
+          <span id="active-real-players"> Loading... </span>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Fake Players
+        </div>
+        <div class="col-sm panel-col">
+          <span id="active-fake-players"> Loading... </span>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Total Players
+        </div>
+        <div class="col-sm panel-col">
+          <span id="active-total-players"> Loading... </span>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm panel-col">
+          Player Database
+        </div>
+        <div class="col-sm panel-col">
+          <select class="form-control" id="player-db">
+              <option id="fetch">Fetching...</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
